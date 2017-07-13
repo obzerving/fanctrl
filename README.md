@@ -38,19 +38,19 @@ You should see a JSON response of this form:
 	
 where--
 
-        "state" is the variable name for the speed of the fan. Its values are
+    "state" is the variable name for the speed of the fan. Its values are
 
 		0=off, 1=low, 2=medium, and 3=high
         
-        "level" is the variable name for the corresponding percentage of fan speed. More on this later.
+    "level" is the variable name for the corresponding percentage of fan speed. More on this later.
 
-		"id" corresponds to the ID of the device
+    "id" corresponds to the ID of the device
 
-		"1" will be whatever value you gave it in the program (e.g. rest.set_id("1"))
+    "1" will be whatever value you gave it in the program (e.g. rest.set_id("1"))
 
-		name is the name of the device
+    "name" is the name of the device
 
-		"fanctrl" will be whatever name you gave it in the program (e.g. rest.set_name("fanctrl"))
+    "fanctrl" will be whatever name you gave it in the program (e.g. rest.set_name("fanctrl"))
 
 NOTE: At this time, there is a bug in aREST, such that sending the URI with a browser will crash the program. The reason appears to be related to the amount of header information that is sent back by the browser. I have had no problems using libcurl in my programs or curl from the command line (see https://curl.haxx.se/).
 Command line example:
@@ -73,8 +73,8 @@ In the URI, <percentage> should be replaced by a number from 1 to 100, correspon
     
 Why did I do it this way? This device was intended to work with the Amazon Echo via a Hues Emulator Bridge (https://github.com/bwssytems/ha-bridge). This allows for voice commands, such as:
 
-"Alexa, turn on the bedroom fan"
+    "Alexa, turn on the bedroom fan"
 
-"Alexa, turn on the bedroom fan to 50 percent"
+    "Alexa, turn on the bedroom fan to 50 percent"
 
-"Alexa, turn off the bedroom fan"
+    "Alexa, turn off the bedroom fan"
