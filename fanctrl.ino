@@ -1,7 +1,7 @@
 /*
  * fanctrl - Control a fan remote
- * http://ESP_0AC8A4/pb?params=<devstate>
- * http://ESP_0AC8A4/zwh?params=on,${intensity.percent}
+ * http://ESP_000000/pb?params=<devstate>
+ * http://ESP_000000/zwh?params=on,${intensity.percent}
  */
 #include <ESP8266WiFi.h>
 #include <aREST.h>
